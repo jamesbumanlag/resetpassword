@@ -16,32 +16,30 @@ change_pass_button = Button(image=image_button,borderwidth=0)
 change_pass_button.place(x=185, y=360)
 
 #textbox
-text_password = Text(root)
-text_password.configure(
-            borderwidth=0,
-            font="{inter} 11 {}",
-            foreground="#727272",
-            height=10,
-            width=50)
-text_password.place(
-    anchor='nw',
+password_entry = Entry(root)
+password_entry.configure(
+    justify=LEFT,
+    borderwidth=0,
+    font='{inter} 11 {}',
+    foreground="#727272"
+)
+
+password_entry.place(
+  
     height=20,
     width=224,
     x=128,
     y=223
 )
-
-text_confirm_new_password = Text(root)
-text_confirm_new_password.configure(
+entry_confirm_new_password = Entry(root)
+entry_confirm_new_password.configure(
+    justify=LEFT,
     borderwidth=0,
     font='{inter} 11 {}',
-    foreground='#727272',
-    height=10,
-    width=50
+    foreground="#727272"
 )
 
-text_confirm_new_password.place(
-    anchor='nw',
+entry_confirm_new_password.place(
     height=20,
     width=224,
     x=128,
